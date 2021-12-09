@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "geopardy-ad04c",
+    "default": "geopardy-ad04c"
+  }
+}

@@ -1,0 +1,474 @@
+[
+  {
+    "question": "What is a data type?",
+    "answer": "A classification of data which tells the compiler or interpreter how the programmer intends to use the data.",
+    "categories": [
+      "Data Types"
+    ],
+    "points": 100
+  },
+  {
+    "question": "What are reference data types in JavaScript?",
+    "answer": "Object. Just object!",
+    "categories": [
+      "Data Types"
+    ],
+    "points": 100
+  },
+  {
+    "question": "What are the primitive data types in JavaScript?",
+    "answer": "String, number, boolean, null, undefined, symbol",
+    "categories": [
+      "Data Types"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What's the difference between `null` and `undefined`?",
+    "answer": "`null` is explicitly set to an empty value, `undefined` has no value",
+    "categories": [
+      "Data Types"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What's the difference between Primitive and Reference types in Javascript?",
+    "answer": "A primitive type has a fixed amount of memory that it takes up, where as a reference type does not. Examples of primitive types are boolean values or integers, where as examples of ref types would be arrays. ref types like arrays are made up of references to their values, hence the name",
+    "categories": [
+      "Data Types"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What's the difference between `==` and `===` in JS?",
+    "answer": "Type Coercion -- `==` doesn't care about type (i.e. type coercion), so `\"2\" == 2` will evaluate to `true`. `===` does care about type, so `\"2\" === 2` will evaluate to `false`.",
+    "categories": [
+      "Data Types"
+    ],
+    "points": 400
+  },
+  {
+    "question": "Why does `(1 / 3).toFixed(2) + 3` equal `0.333`?",
+    "answer": "toFixed() coerces to a string, which makes `+` act as a concatenation operator, so it appends 3 to the resulting string",
+    "categories": [
+      "Data Types"
+    ],
+    "points": 400
+  },
+  {
+    "question": "How big can a number be in JavaScript?",
+    "answer": "The range of safe numbers in JavaScript is -(2^53 - 1) to (2^53 - 1). This is roughly 9 quadrillion values.",
+    "categories": [
+      "Data Types"
+    ],
+    "points": 500
+  },
+  {
+    "question": "Why doesn't 0.1 + 0.2 = 0.3 in JavaScript?",
+    "answer": "Because JavaScript stores data as double-precision floating point numbers, which can't accurately represent the infinite amount of decimal numbers there is.",
+    "categories": [
+      "Data Types"
+    ],
+    "points": 500
+  },
+  {
+    "question": "What is scope?",
+    "answer": "A container where references to variables and functions are shared.",
+    "categories": [
+      "Scope"
+    ],
+    "points": 100
+  },
+  {
+    "question": "What is the difference between `var`, `let`, and `const`?",
+    "answer": "`var` is scoped to the function, `let` and `const` are scoped to the block, `const` cannot be reassigned.",
+    "categories": [
+      "Scope"
+    ],
+    "points": 100
+  },
+  {
+    "question": "What creates scope in Javascript?",
+    "answer": "There's global scope and function scope in ES5. In ES2015 there's also Block scope.",
+    "categories": [
+      "Scope"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Name 2 or more ways to define a global variable in Javascript",
+    "answer": "Leave off the `var`, assign it to the `window`, or declare it in the top-level scope",
+    "categories": [
+      "Scope"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Explain \"hoisting\".",
+    "answer": "A declared function is brought to the top of a scope before the code in the rest of the scope executes, which makes that function available everywhere in the scope",
+    "categories": [
+      "Scope"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Why is dangerous to pollute or use the global scope?",
+    "answer": "Libraries and frameworks might have modified the global scope, which makes it unreliable.",
+    "categories": [
+      "Scope"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is a closure, and how/why would you use one?",
+    "answer": "A closure is a function that maintains a reference to it's outer scope. These are useful in high-order functions.",
+    "categories": [
+      "Scope"
+    ],
+    "points": 400
+  },
+  {
+    "question": "You declare a variable in the middle of a scope. Where is that variable accessible?",
+    "answer": "Anywhere after the declaration in the same scope, as well as any nested scopes created after the declaration.",
+    "categories": [
+      "Scope"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What does it mean to shadow a variable?",
+    "answer": "Redeclaring a variable that's available in an outer scope, which removes access to it.",
+    "categories": [
+      "Scope"
+    ],
+    "points": 500
+  },
+  {
+    "question": "What is the difference between declaring a function vs. declaring a function expression?",
+    "answer": "A declared function is hoisted, a function expression is not.",
+    "categories": [
+      "Scope"
+    ],
+    "points": 500
+  },
+  {
+    "question": "What is the DOM?",
+    "answer": "The document object model, the API the browser exposes for web pages",
+    "categories": [
+      "DOM"
+    ],
+    "points": 100
+  },
+  {
+    "question": "How do you create a div element?",
+    "answer": "`const $div = document.createElement('div')`",
+    "categories": [
+      "DOM"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What are 5 ways you can access a DOM element?",
+    "answer": "`document.querySelector`, `document.querySelectorAll`, `document.getElementById`, `document.getElementsByClass`, `document.getElementsByTagName`",
+    "categories": [
+      "DOM"
+    ],
+    "points": 200
+  },
+  {
+    "question": "How do you access the `form` element on a form submission event?",
+    "answer": "`event.target`",
+    "categories": [
+      "DOM"
+    ],
+    "points": 300
+  },
+  {
+    "question": "How do you set the `background-color` of a given DOM element to red?",
+    "answer": "`element.style.backgroundColor = red;`",
+    "categories": [
+      "DOM"
+    ],
+    "points": 300
+  },
+  {
+    "question": "How do you access the `src` attribute of an `img` element?",
+    "answer": "With `img.src` or `img['src']`",
+    "categories": [
+      "DOM"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What's the difference between setting the `innerHTML` of an element and using `appendChild()`?",
+    "answer": "`innerHTML` completely replaces the content and takes a string, `appendChild()` adds to the element's children and takes a DOM element",
+    "categories": [
+      "DOM"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What is event bubbling?",
+    "answer": "An event that happens on an element also happens on all parent elements sequentially unless `event.stopPropagation` is called.",
+    "categories": [
+      "DOM"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What are the 3 phases of a DOM event firing?",
+    "answer": "Capture (going from the body down to the element that fired), Target (when the innermost element fires), Bubbling (when the event comes back through the DOM))",
+    "categories": [
+      "DOM"
+    ],
+    "points": 500
+  },
+  {
+    "question": "Compare and contrast a NodeList and an Array.",
+    "answer": "Both are collections, but they have different prototypes and therefore different methods available. For instance, `NodeList`s don't have native array methods.",
+    "categories": [
+      "DOM"
+    ],
+    "points": 500
+  },
+  {
+    "question": "Explain the difference between synchronous and asynchronous functions.",
+    "answer": "When a function does not immediately return a value, it is asynchronous. The rest of the program continues executing, requiring special handling and callback functions for when asynchronous function calls complete.",
+    "categories": [
+      "Patterns"
+    ],
+    "points": 100
+  },
+  {
+    "question": "What is event delegation?",
+    "answer": "Letting a parent element's event handler respond to an event instead of the original element",
+    "categories": [
+      "Patterns"
+    ],
+    "points": 200
+  },
+  {
+    "question": "How does Array.prototype.reduce work?",
+    "answer": "It accepts a function and an initial value, and returns the last value returned from the passed-in function. The function's signature that it accepts an accumulator and a current value, and returns the value of the accumulator in the next iteration.",
+    "categories": [
+      "Patterns"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is an IIFE and what does it do?",
+    "answer": "Immediately invoked function expression, creates a function and immediately runs it",
+    "categories": [
+      "Patterns"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What's the difference a class and an object?",
+    "answer": "An class is a blueprint for making an object, an object is an instance of the blueprint.",
+    "categories": [
+      "Patterns"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What does the `this` keyword refer to in JavaScript?",
+    "answer": "1. The first value passed to call() or apply()\n2. The value that was bind()ed to the function\n3. The calling object\n4. The global scope",
+    "categories": [
+      "Patterns"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What is the benefit of using event delegation?",
+    "answer": "Event listeners are relatively expensive, and this pattern allows you to use fewer of them",
+    "categories": [
+      "Patterns"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What is the factory pattern?",
+    "answer": "An OOP pattern- When you create a new instance, but let an intermediate object determine the exact class of the instance.",
+    "categories": [
+      "Patterns"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What are the 4 pillars of OOP and what do they mean?",
+    "answer": "1. Encapsulation - State and behavior and contained together and access to state is mediated through getters and setters.\n2. Inheritance - State and behavior can be inherited by subclasses without redeclaring them\n3. Polymorphism - Changing the behavior of a subclassed object\n4. Abstraction - Only exposing the relevant details, not the inner implementation",
+    "categories": [
+      "Patterns"
+    ],
+    "points": 500
+  },
+  {
+    "question": "What are some tenets of functional programming?",
+    "answer": "1. Functional purity (no side-effects, output derived only from input)\n2. Simple functions\n3. First-class functions (functions as variables)\n4. Higher-order functions (functions that return functions or accept functions as arguments)",
+    "categories": [
+      "Patterns"
+    ],
+    "points": 500
+  },
+  {
+    "question": "What is a JavaScript runtime?",
+    "answer": "A platform that compiles and runs JavaScript code.",
+    "categories": [
+      "Engines"
+    ],
+    "points": 100
+  },
+  {
+    "question": "What is node.js?",
+    "answer": "A runtime that allows you to run JavaScript outside of a browser.",
+    "categories": [
+      "Engines"
+    ],
+    "points": 100
+  },
+  {
+    "question": "Is JS single or multi-threaded?",
+    "answer": "Single-threaded- it uses the event loop to achieve concurrency.",
+    "categories": [
+      "Engines"
+    ],
+    "points": 100
+  },
+  {
+    "question": "Name three major JavaScript engines and who maintains them.",
+    "answer": "Mozilla - Rhino, Mozilla - SpiderMonkey, Google - V8, Safari - Nitro, IE/Edge - Chakra",
+    "categories": [
+      "Engines"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Name 2 global variables that exist in the browser, but not in node.",
+    "answer": "`document`, `window`",
+    "categories": [
+      "Engines"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Name 3 global variables that exist in node, but not in the browser.",
+    "answer": "`process`, `global`, `module`, `require`",
+    "categories": [
+      "Engines"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Is JavaScript compiled or interpreted?",
+    "answer": "JavaScript is compiled at run-time with a JIT compiler.",
+    "categories": [
+      "Engines"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is the disadvantage of having a function return multiple types?",
+    "answer": "It prevents the JavaScript compiler can't optimize your code.",
+    "categories": [
+      "Engines"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What does it mean if the maximum callstack size is exceeded?",
+    "answer": "It means there are more scheduled instructions than the browser is capable of handling, often because of an infinite loop.",
+    "categories": [
+      "Engines"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What is the event loop?",
+    "answer": "The event loop listens for queued up messages and adds instructions to the call stack",
+    "categories": [
+      "Engines"
+    ],
+    "points": 500
+  },
+  {
+    "question": "What kind of inheritance does JavaScript have?",
+    "answer": "Prototypal inheritance",
+    "categories": [
+      "Prototypes"
+    ],
+    "points": 100
+  },
+  {
+    "question": "How do you set the prototype of a class without using `extends`?",
+    "answer": "",
+    "categories": [
+      "Prototypes"
+    ],
+    "points": 200
+  },
+  {
+    "question": "How does inheritance work in JavaScript?",
+    "answer": "JavaScript has prototypal inheritance. Rather than a blueprint, objects are linked to other object instances via prototypes.",
+    "categories": [
+      "Prototypes"
+    ],
+    "points": 200
+  },
+  {
+    "question": "How do you set the prototype of a class that uses the `class` syntax?",
+    "answer": "Using the `extends` keyword.",
+    "categories": [
+      "Prototypes"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is the prototype chain?",
+    "answer": "What you access a property or method on an object, it looks for it on the object, then the object's prototype, and then that object's prototype until it either finds it or reaches the top-level prototype",
+    "categories": [
+      "Prototypes"
+    ],
+    "points": 300
+  },
+  {
+    "question": "How do you create and use a class in JavaScript without the the `class` keyword?",
+    "answer": "Declare a function, and then call it with the `new` keyword.",
+    "categories": [
+      "Prototypes"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is `.__proto__`?",
+    "answer": "`__proto__` is the actual object used in the lookup chain to resolve methods",
+    "categories": [
+      "Prototypes"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What is `.prototype`?",
+    "answer": "`.prototype` is the object that is used to build `__proto__` when you create an object with `new`.",
+    "categories": [
+      "Prototypes"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What are the dangers of extending built-in prototypes?",
+    "answer": "Similar to polluting the global scope, anything you modify in a built-in prototype may be changed in the Ecmascript spec in the future, and may be overridden by another library or framework.",
+    "categories": [
+      "Prototypes"
+    ],
+    "points": 500
+  },
+  {
+    "question": "What's the advantage of putting a method on a prototype instead of an instance?",
+    "answer": "Reduces the memory used by reducing the number of copies of the method",
+    "categories": [
+      "Prototypes"
+    ],
+    "points": 500
+  }
+]
